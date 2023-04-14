@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="CSS\stylesheet4.css">
+		<title>Temperature Conversion Tool</title>
+		<meta name="description" content="Weather Conversion">
+	</head>
+	<body>
+		<h1>Temperature Conversion</h1>
+		<img src="images\thermometer--pic.jpg" alt="thermometer pic" div class="thermometer-pic">
+			</div>
+			<p>Please enter a number in one of the boxes below then click convert to get your temperature! </p>
+			<h2> Fahrenheit to Celsius</h2>
+				<input type="text" name="ftc" id="ftc"/> <button type="button" onclick="fahrenheitCelsius()"> Click to Convert</button>
+			<h2>Celsius to Fahrenheit </h2>
+				<input type="text" name="ctf" id="ctf" /> <button type="button" onclick="celsiusFahrenheit()"> Click to Convert</button>
+			<h2> Answer </h2>
+				<input type="text" name="answer box" id="answer"/> 
+			<script>	
+ 			function fahrenheitCelsius() {  
+    				var fsc = parseFloat(document.getElementById('ftc').value);
+    				var cfc = (fsc-32) * (5/9);
+    				document.getElementById('answer').value = cfc;
+    				}
+			</script>
+			<script>	
+ 			function celsiusFahrenheit() {  
+    				var fsc = parseFloat(document.getElementById('ctf').value);
+    				var cfc = (fsc*9/5) + (32);
+    				document.getElementById('answer').value = cfc;
+    				}
+			</script>
+
+	</body>
+</html>

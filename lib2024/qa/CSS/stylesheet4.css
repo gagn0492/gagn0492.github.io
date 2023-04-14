@@ -1,0 +1,14 @@
+h1 {
+	text-align: center;
+	border-bottom: 5px dashed;
+	font-family: Georgia, serif;
+}
+
+body {
+	background-color: #fcebed;
+	}
+
+.thermometer-pic {
+	float: left;
+	margin: 10px 10px 10px 10px;
+}
