@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Dogs Dogs Dogs Dogs</title>
+		<link rel="stylesheet" href="CSS\SSFinalGallery.css">
+		<meta name="description" content="Image Gallery of Dogs">
+
+	</head>
+	<body>
+		<h1> Gallery of All Three Dogs </h1>
+		<p> Here are images of all three dogs! Watson and Rupert live in Kansas State and visit for the holidays! Finn and Rupert get along very well, Watson prefers the company of humans </p>
+
+		<div class="full-img" id="fullImgBox">
+			<img src="images\party.jpg" id="fullImg">
+			<span onclick="closeFullImg()">x</span>
+		</div>
+		<div class="img-gallery">
+		<img src="images\party.jpg" onclick="openFullImg(this.src)">
+		<img src="images\All pups.jpg" onclick="openFullImg(this.src)">
+		<img src="images\babywat.jpg" onclick="openFullImg(this.src)">
+		<img src="images\halloween.jpg" onclick="openFullImg(this.src)">
+		<img src="images\IMG_1570.jpg" onclick="openFullImg(this.src)">
+		<img src="images\IMG_20211228_111908342.jpg" onclick="openFullImg(this.src)">
+		<img src="images\received_630860792167416.jpeg" onclick="openFullImg(this.src)">
+		<img src="images\watson easter.jpg" onclick="openFullImg(this.src)">
+		<img src="images\jump.jpg" onclick="openFullImg(this.src)">
+		<img src="images\IMG_0495.jpg" onclick="openFullImg(this.src)">
+		<img src="images\cosy.jpg" onclick="openFullImg(this.src)">
+		<img src="images\easter.jpg" onclick="openFullImg(this.src)">
+		
+		</div>	
+
+		<script>
+			var fullImgBox = document.getElementById("fullImgBox");
+			var fullImg = document.getElementById("fullImg");
+
+			function openFullImg(pic){
+				fullImgBox.style.display = "flex";
+				fullImg.src = pic;
+			}
+			function closeFullImg(){
+				fullImgBox.style.display = "none";
+			}
+		</script>
+			
+		<a href="C:\Users\rosal\Documents\GitHub\gagn0492.github.io\lib2024\qa\finalmainpage.html" class="btn">Main Page</a>
+		<a href="C:\Users\rosal\Documents\GitHub\gagn0492.github.io\lib2024\qa\finalfinleypage.html" class="btn">Learn About Finley</a>
+		<a href="C:\Users\rosal\Documents\GitHub\gagn0492.github.io\lib2024\qa\finalrupertpage.html" class="btn">Learn about Rupert</a>
+		<a href="C:\Users\rosal\Documents\GitHub\gagn0492.github.io\lib2024\qa\finalwatsonpage.html" class="btn">Learn About Watson</a>
+			
+	</body>
+</html>
